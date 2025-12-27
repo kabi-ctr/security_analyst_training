@@ -18,7 +18,7 @@ This repository focuses on **practical, job-relevant skills**: analyzing logs, t
 
 The structure follows a **skill-area-based layout** commonly used in SOC portfolios, allowing reviewers to quickly navigate to areas of interest such as incident response, threat detection, or analytics.
 ```security-analyst-training/
-├── 01-foundations/
+├── 01-foundation/
 │ ├── networking-basics.md
 │ ├── linux-notes.md
 │ └── soc-overview.md
