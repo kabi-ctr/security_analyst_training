@@ -147,5 +147,8 @@ A well-functioning SOC is critical for:
 ---
 
 ## References
-- MITRE ATT&CK Framework
-- NIST Incident Response Lifecycle
+- <a href="https://attack.mitre.org/">
+  MITRE ATT&CK Enterprise MatriX </a>
+- <a href="https://csrc.nist.gov/projects/incident-response">
+  NIST Incident Response Lifecycle
+</a> 
