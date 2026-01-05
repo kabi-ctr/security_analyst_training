@@ -19,18 +19,20 @@ Sender Indicators
 - External Sender Warnings - Missing or bypassed
 
 # Lab by LetsDefend
-<a href="https://app.letsdefend.io/challenge/phishing-email">
-  Phishing Challenge
+<a href="https://app.letsdefend.io/training/lessons/phishing-email-analysis">
+  Phishing Email Analysis
 </a>
 
-## Overview
+## Overview  
+
 **Severity:** High  
 **Date/Time of Alert:** June 13, 2021, 02:13 PM  
 **Rule Name:** SOC146 - Phishing Mail Detected - Excel 4.0 Macros  
 **Event ID:** 93  
 **Alert Type:** Exchange  
-**Incident Source:** Real phishing attack (LetsDefend simulated alert)
+**Incident Source:** Real phishing attack (LetsDefend simulated alert)  
 
+![ALert on SIEM](screenshots/alert.png) 
 ---
 
 ## 1. Summary
@@ -51,13 +53,13 @@ The initial alert indicated the presence of a potentially malicious email that c
 ---
 
 ## 3. Investigation
-
+![investigation process](screenshots/artifacts.png) 
 ### 3.1 Email Parsing
 
 - Located the email with subject **“RE: Meeting Notes”** and noted sender, recipient, and originating SMTP IP.  
 - The body contained a ZIP attachment: `11f44531fb088d31307d87b01e8eabff.zip`.  
 - No URLs were found directly in the email body itself.
-
+![Email content](screenshots/attachment.png) 
 ### 3.2 Attachment Analysis
 
 The ZIP archive was extracted. Inside was a file named `research-1646684671.xls`, which was flagged as malicious by multiple security vendors and sandbox engines on VirusTotal. 
@@ -121,4 +123,5 @@ This incident was assessed as a **true positive** phishing attack involving a ma
 - Regular training and phishing simulations can reduce the chances of execution by users.
 
 ---
+
 
