@@ -1,6 +1,6 @@
-# 🛡️ Security Analyst Portfolio
+# 🛡️ Security Analyst Trainig
 
-Welcome to my **Security Analyst Portfolio** — a curated collection of hands-on projects, notes, and case studies designed to demonstrate readiness for a **Security Operations Center (SOC) / Blue Team** role.
+Welcome to my **Security Analyst Training** — a curated collection of hands-on projects, notes, and case studies designed to demonstrate readiness for a **Security Operations Center (SOC) / Blue Team** role.
 
 This repository focuses on **practical, job-relevant skills**: analyzing logs, triaging alerts, responding to incidents, mapping activity to **MITRE ATT&CK**, and applying **lightweight machine learning** techniques to support threat detection and security analytics.
 
@@ -25,29 +25,20 @@ The structure follows a **skill-area-based layout** commonly used in SOC portfol
 │
 ├── 02-incident-response/
 │ ├── phishing-incident-report.md
-│ ├── brute-force-incident-report.md
-│ └── incident-response-playbook.md
+│ │── incident-response-playbook.md
 │
 ├── 03-threat-detection-ml/
 │ ├── phishing-email-classifier/
 │ │ ├── README.md
 │ │ ├── data/
-│ │ ├── notebook.ipynb
-│ │ └── results.md
-│ │
-│ └── login-anomaly-detection/
-│ ├── README.md
-│ ├── data/
-│ ├── notebook.ipynb
-│ └── evaluation.md
-│
+│   ├── notebook.ipynb
+│   └── results.md
+│ 
+│ 
 ├── 04-threat-intelligence/
 │ ├── mitre-attack-mapping.md
 │ └── ioc-analysis.md
-│
-└── 05-interview-prep/
-├── soc-interview-qna.md
-└── case-studies.md
+
 ```
 ## 🔧 What You’ll Find in Each Section
 
@@ -55,16 +46,13 @@ The structure follows a **skill-area-based layout** commonly used in SOC portfol
 Concise notes on **networking, Linux, and SOC operations** written from a blue-team perspective. Includes commonly used commands, log examples, and triage-focused explanations.
 
 ### `02-incident-response`
-End-to-end **incident response write-ups** (e.g., phishing, brute-force attacks) along with playbooks that demonstrate structured investigations, evidence handling, and reporting.
+End-to-end **incident response write-ups** (e.g., phishing ) along with playbooks that demonstrate structured investigations, evidence handling, and reporting.
 
 ### `03-threat-detection-ml`
-Small, focused **machine learning projects** (phishing email classification, login anomaly detection) showing how analytics can support SOC decision-making. Emphasis is placed on **interpretability, limitations, and false positives**, not just model accuracy.
+Small, focused **machine learning projects** (phishing email classification,) showing how analytics can support SOC decision-making. Emphasis is placed on **interpretability, limitations, and false positives**, not just model accuracy.
 
 ### `04-threat-intelligence`
 Mapping observed activity to **MITRE ATT&CK techniques** and performing basic **IOC analysis** using public threat intelligence sources and open-source tools.
-
-### `05-interview-prep`
-Curated **SOC interview questions and case studies** derived directly from the projects in this repository, designed to help translate hands-on work into clear interview narratives.
 
 ---
 
