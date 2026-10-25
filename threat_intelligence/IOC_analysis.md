@@ -13,7 +13,7 @@ A phishing email from `free@coffeeshoop.com` targeting `felix@letsdefend.io` wit
 containing `free-coffee.zip` attachment was sent. ANY.RUN sandbox analysis revealed high-risk behavior (score 17/20), 
 password protection, and C2 to `coffeeshoop.com`. VirusTotal and security vendors confirmed malicious nature. IOCs included hashes, IPs, domains for immediate response.
 
-![Phishing Email with Redeem Button & ZIP Attachment](threat_intelligence/IOC_phishingEmail_images/email.png) 
+![Phishing Email with Redeem Button & ZIP Attachment](IOC_phishingEmail_images/email.png) 
 
 ## Incident Details
 
@@ -26,8 +26,8 @@ password protection, and C2 to `coffeeshoop.com`. VirusTotal and security vendor
 | Date | `May 13, 2024, 09:22 AM` |
 | Action | `Allowed` (SOC Flagged) |
 
-![Sender/Receiver Email Headers](threat_intelligence/IOC_phishingEmail_images/receiverANDsender.png)
-![SOC Phishing Alert](threat_intelligence/IOC_phishingEmail_images/phishingAlert.png) 
+![Sender/Receiver Email Headers](IOC_phishingEmail_images/receiverANDsender.png)
+![SOC Phishing Alert](IOC_phishingEmail_images/phishingAlert.png) 
 
 ## Indicators of Compromise (IOCs)
 
@@ -45,11 +45,7 @@ password protection, and C2 to `coffeeshoop.com`. VirusTotal and security vendor
 | SHA1 | `c895f4a970c61...` | **High** |
 | SHA256 | `6f33ae4bf134c49f...` | **High** |
 
-![ZIP Properties & Full Hashes](threat_intelligence/IOC_phishingEmail_images/hash.png) 
-
-### 🌐 Network Indicators
-
-![Contacted IPs & Autonomous Systems](threat_intelligence/IOC_phishingEmail_images/IPaddress.png) 
+![ZIP Properties & Full Hashes](IOC_phishingEmail_images/hash.png) 
 
 ### 🔍 Sandbox Analysis (ANY.RUN)
 - Executed process: Coffee.exe
@@ -61,7 +57,7 @@ password protection, and C2 to `coffeeshoop.com`. VirusTotal and security vendor
 - Non-standard port usage (3451)
 - Pattern suggests suspicious external communication (possible C2 behavior)
 
-![ANY.RUN Verdict & Threat Tags](threat_intelligence/IOC_phishingEmail_images/anyRunAnalysis.png) 
+![ANY.RUN Verdict & Threat Tags](IOC_phishingEmail_images/anyRunAnalysis.png) 
 
 ### 📊 VirusTotal Analysis
 - 17 / 64 security vendors flagged the file as malicious
@@ -76,7 +72,7 @@ password protection, and C2 to `coffeeshoop.com`. VirusTotal and security vendor
 - Password protection may have limited full static analysis
 - Detected anti-debug / sandbox evasion behavior 
 
-![VirusTotal Detection Results](threat_intelligence/IOC_phishingEmail_images/virustotalAnalysis.png)
+![VirusTotal Detection Results](IOC_phishingEmail_images/virustotalAnalysis.png)
 
 **Traffic Patterns:**
 - HTTPS beaconing to Cloudflare-hosted phishing domain
@@ -92,7 +88,7 @@ password protection, and C2 to `coffeeshoop.com`. VirusTotal and security vendor
 ✅ Content suspicious? (URGENT voucher)  
 ✅ Attachments present? (free-coffee.zip)  
 
-![Phishing Analysis Playbook](threat_intelligence/IOC_phishingEmail_images/playbook.png) 
+![Phishing Analysis Playbook](IOC_phishingEmail_images/playbook.png) 
 
 ## MITRE ATT&CK Mapping
 
@@ -117,7 +113,7 @@ Detectability	Medium	Password-protected ZIP and anti-debug techniques limit stat
 
 ### 🚨 **Immediate Actions** (0-2 hours)
 - Block domain: coffeeshoop.com
-- Block IPs: 204.79.197.203, 37.120.233.226
+- Block IPs: 37.120.233.226
 - Password reset for felix@letsdefend.io
 
 ---
