@@ -1,4 +1,4 @@
-# 🛡️ Security Analyst Trainig
+# 🛡️ Security Analyst Training
 
 Welcome to my **Security Analyst Training** — a curated collection of hands-on projects, notes, and case studies designed to demonstrate readiness for a **Security Operations Center (SOC) / Blue Team** role.
 
